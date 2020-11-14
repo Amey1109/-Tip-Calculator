@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel='stylesheet' href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500&display=swap" rel="stylesheet">
+    <link rel="icon" href="./icon.png" type="image/x-icon">
+    
+</head>
+
+<body style="background-color: black;">
+    <form style=" margin-left:-2% ; margin-top: 1%;">
+        <label>
+            <input name="billAmount" id="billAmount" type="text" required />
+            <div class="label-text">Bill Amount in ₹</div>
+        </label>
+
+        <label style="margin-top: 2%;">
+            <input type="tel" name="numberOfPeople" id="numberOfPeople" required />
+            <div class="label-text">Number of People</div>
+        </label>
+
+        <label>
+
+            <div class="label-text" style="margin-top: 2%;">How Was the Service?</div>
+            <label>
+                    <div class="label-text" style="margin-top: 2%; display: inline-block;" id="Excellent" onclick="getExcellent()">&nbsp;Excellent&nbsp;</div>
+                    <div class="label-text" style="margin-top: 2%; display: inline-block;" id="Good" onclick="getGood()">&nbsp;Good&nbsp;</div>
+                    <div class="label-text" style="margin-top: 2%; display: inline-block;" id="Bad" onclick="getBad()">&nbsp;Bad&nbsp;</div>
+            </label>
+
+        </label>
+
+        <label>
+            <div class="label-text" style="margin-top: 2%; ">Tip for each person</div>
+            <div class="label-text" style="margin-top: 2%; font-size: 35px;" id="tip" ></div>
+        </label>
+
+        <button type="button" style="margin-left: 39%; margin-top: 5%;" onclick="calculate()"> Calculate Tip</button>
+
+    </form>
+
+    <script src="./script_tip.js"></script>
+</body>
+
+</html>
